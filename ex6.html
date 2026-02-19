@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="ex6.css">
+</head>
+<body>
+    <div class="titre-calculatrice">
+        Calculatrice
+    </div>
+
+    <div class="calculatrice">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <button class="bouton operateur" onclick="reinitialiser()" style="width: 22%;">C</button>
+            <input type="text" id="resultat" class="champ-saisie" readonly style="width: 75%;" tabindex="-1">
+        </div>
+
+        <div class="boutons">
+            <button class="bouton-op" onclick="ajouterOperateur('+')">+</button>
+            <button class="bouton" onclick="ajouterChiffre('1')">1</button>
+            <button class="bouton" onclick="ajouterChiffre('2')">2</button>
+            <button class="bouton" onclick="ajouterChiffre('3')">3</button>
+
+            <button class="bouton-op" onclick="ajouterOperateur('-')">-</button>
+            <button class="bouton" onclick="ajouterChiffre('4')">4</button>
+            <button class="bouton" onclick="ajouterChiffre('5')">5</button>
+            <button class="bouton" onclick="ajouterChiffre('6')">6</button>
+
+            <button class="bouton-op" onclick="ajouterOperateur('*')">*</button>
+            <button class="bouton" onclick="ajouterChiffre('7')">7</button>
+            <button class="bouton" onclick="ajouterChiffre('8')">8</button>
+            <button class="bouton" onclick="ajouterChiffre('9')">9</button>
+
+            <button class="bouton-op" onclick="ajouterOperateur('/')">/</button>
+            <button class="bouton" onclick="ajouterDecimal()">.</button>
+            <button class="bouton" onclick="ajouterChiffre('0')">0</button>
+            <button class="bouton" onclick="effacer()">⌫</button>
+
+            <button class="bouton-eq" onclick="calculerResultat()" style="grid-column: span 4;">=</button>
+        </div>
+    </div>
+    <script src="ex6.js"></script>
+</body>
+</html>
