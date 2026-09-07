@@ -89,3 +89,13 @@ body {
 .bouton-eq:hover{
     background-color: rgb(92, 89, 89);
 }
+
+.message-bas {
+    text-align: center;
+    margin: 20px auto 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: .3px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .45);
+}
