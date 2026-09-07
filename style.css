@@ -4,6 +4,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    align-content: center;
     font-family: sans-serif;
     background-image: linear-gradient(to top, #981010 0%, #180012 100%);
 }
